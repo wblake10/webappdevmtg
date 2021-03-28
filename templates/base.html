@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic The Gathering Card Finder </title>
+</head>
+<body>
+    <p>
+        <span id="logo">MTG Card Finder</span>
+        <span style="flota:right;">
+            {%  if user.username %}
+                <span class="large-font">Hello{{ user.username }}!</span><br>
+                <a href="{% url 'logout' %}"><button>logout</button></a>
+            {% else %}
+                <span class="large-font">Hello Guest User!</span><br>
+                <a href="{% url 'login' %}"><button>login</button></a>
+            {% endif %}
+        </span>
+    </p>
+    {% block content %}
+        <-- This is where the page content will go! -->
+    {% endblock %}
+   <div id="footer">
+        Fake ©2021 Columbia Business School - WebAppDev Team 3 - All Rights Reserved
+    </div>
+</body>
+</html>

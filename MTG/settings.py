@@ -124,3 +124,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/home'
+
+#In-app Accounts and Passwords:
+#Steve_Jobs, applerules, 24-02-1955
+#mtg_admin_user    mtgadminpassword   wblake21@gsb.columbia.edu

@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Magic The Gathering Card Finder - Home</title>
-</head>
+{% extends "base.html" %}
+{% block content %}
 <body>
 <h1>Greetings!</h1>
 Welcome to the CBS - WebAppDev Team 3 Magic The Gathering Card Finder.
@@ -15,8 +11,4 @@ This website will help you view any card printed. Enjoy!
     <p>
         <a href="{% url 'card_search' %}">Search for a MTG Card</a><br>
         <a href="{% url 'maintenance' %}">Update MTG Card Database</a><br>
-<div id="footer">
-    Fake ©2021 Columbia Business School - WebAppDev Team 3 - All Rights Reserved
-</div>
-</body>
-</html>
+{% endblock %}
